@@ -1,1 +1,1 @@
-# NeuroSense-AI-Mental-Wellness-Monitoring-Applications
+# NeuroSense-AI-Mental-Wellness-Monitoring-Application
