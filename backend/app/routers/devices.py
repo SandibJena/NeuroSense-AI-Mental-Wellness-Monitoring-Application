@@ -29,9 +29,9 @@ class DeviceResponse(BaseModel):
     """Schema for device response."""
     id: str
     device_type: str
-    device_name: str = None
+    device_name: str | None = None
     is_connected: bool = True
-    last_synced_at: datetime = None
+    last_synced_at: datetime | None = None
     connected_at: datetime
 
     class Config:

@@ -84,9 +84,7 @@ function StressGauge({ score }: { score: number }) {
           strokeDasharray={`${circumference} ${circumference}`}
           strokeDashoffset={0}
           strokeLinecap="round"
-          rotation={180}
-          originX={center}
-          originY={center}
+          transform={`rotate(180 ${center} ${center})`}
         />
         {/* Progress arc */}
         <Circle
@@ -99,9 +97,7 @@ function StressGauge({ score }: { score: number }) {
           strokeDasharray={`${circumference} ${circumference}`}
           strokeDashoffset={circumference - progress}
           strokeLinecap="round"
-          rotation={180}
-          originX={center}
-          originY={center}
+          transform={`rotate(180 ${center} ${center})`}
         />
         <SvgText
           x={center}
@@ -163,9 +159,7 @@ function RecoveryMeter({ score }: { score: number }) {
           strokeDasharray={`${circumference} ${circumference}`}
           strokeDashoffset={circumference - progress}
           strokeLinecap="round"
-          rotation={-90}
-          originX={60}
-          originY={60}
+          transform="rotate(-90 60 60)"
         />
         <SvgText
           x={60}
