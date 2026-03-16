@@ -1,15 +1,14 @@
-# NeuroSense – AI Mental Wellness Monitoring Application
+# NeuroSense-AI-Mental-Wellness-Monitoring-Application
 
-A cross-platform AI mental wellness analytics platform that integrates with wearable devices to estimate stress level, recovery state, and emotional wellness trends.
+A cross-platform AI mental wellness analytics platform that integrates with wearable and sensor devices to estimate stress level, recovery state, and emotional wellness trends.
 
 ## Tech Stack
 
-- **Frontend**: React Native (Expo) + TypeScript
-- **Backend**: FastAPI (Python)
-- **Database**: SQLite (dev) / PostgreSQL (prod)
-- **ML**: Scikit-learn, TensorFlow
-- **State Management**: Redux Toolkit
-- **UI**: Material Design 3
+- Frontend: React Native (Expo) + TypeScript
+- Backend: FastAPI (Python)
+- Database: SQLite (dev) / PostgreSQL (prod)
+- Analytics: Rule-based stress, recovery, and burnout engines
+- State Management: Redux Toolkit
 
 ## Getting Started
 
@@ -20,11 +19,11 @@ pip install -r requirements.txt
 uvicorn app.main:app --reload
 ```
 
-### Frontend
+### Frontend (Web)
 ```bash
 cd frontend
 npm install
-npx expo start
+npm run web
 ```
 
 ## Features
@@ -32,5 +31,5 @@ npx expo start
 - Real-time stress detection
 - Burnout risk prediction
 - Recovery score analysis
-- Mood analytics & journaling
-- Wearable device integration (Apple Watch, Fitbit, Oura, Samsung, Garmin)
+- Mood analytics and journaling
+- Universal device onboarding and management
