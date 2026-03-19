@@ -20,11 +20,11 @@ uvicorn app.main:app --reload
 ```
 
 ### Frontend (Web)
-```bash
+````bash
 cd frontend
 npm install
 npm run web
-```
+````
 
 ## Features
 
